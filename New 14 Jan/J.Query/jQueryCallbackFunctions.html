@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Callback Function</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#box").hide(1000, function(){
+                    alert("Box is now hidden");
+                });
+            });
+        });
+    </script>
+
+    <style>
+        #box{
+            width: 150px;
+            height: 80px;
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+
+<button id="btn">Hide</button>
+<br><br>
+<div id="box"></div>
+
+</body>
+</html>

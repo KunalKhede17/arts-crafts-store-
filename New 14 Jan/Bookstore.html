@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store Web Page</title>
+</head>
+<body>
+    <link rel="stylesheet" href="Bookstore.css">
+</body>
+   <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-calendar-check"></i> Bookstore</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#bookings" class="nav-link">My Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#analytics" class="nav-link">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="login-btn">Login</button>
+                    <button class="btn btn-primary" id="signup-btn">Sign Up</button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+ <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome To My Book Store </h1>
+            <p>Schedule appointments, reserve services, and manage your bookings all in one place</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="scrollToSection('services')">Book Now</button>
+                <button class="btn btn-outline btn-large" onclick="scrollToSection('how-it-works')">Learn More</button>
+            </div>
+        </div>
+            
+    </section>
+ <section class="services" id="services">
+     
+    </section>
+
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <h2>Book Service</h2>
+            <div id="booking-form">
+                <div class="service-info">
+                    <h3 id="modal-service-name">Service Name</h3>
+                     
+                </div>
+                   <div class="form-group">
+                        <label for="booking-name">Full Name</label>
+                         </li>
+                    <li class="nav-item">
+                        <input type="text" id="booking-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-email">Email</label>
+                         </li>
+                    <li class="nav-item">
+                        <input type="email" id="booking-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-phone">Phone </label>
+                         </li>
+                    <li class="nav-item">
+                        <input type="tel" id="booking-phone" placeholder="Enter your phone number" required>
+                    </div>
+                <form id="booking-details-form">
+                    <div class="form-group">
+                        <label for="booking-date">Select Date</label>
+                         </li>
+                    <li class="nav-item">
+                        <input type="date" id="booking-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-time">Select Time</label>
+                         </li>
+                    <li class="nav-item">
+                        <select id="booking-time" required>
+                            <option value="">Choose Time Slot</option>
+                            <option value="09:00">09:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">01:00 PM</option>
+                            <option value="14:00">02:00 PM</option>
+                            <option value="15:00">03:00 PM</option>
+                            <option value="16:00">04:00 PM</option>
+                            <option value="17:00">05:00 PM</option>
+                            <option value="18:00">06:00 PM</option>
+                        </select>
+                    </div>
+                     </li>
+                    <li class="nav-item">
+                 
+                    
+            </div>
+        </div>
+        
+          <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="scrollToSection('services')">Apply</button>
+                 <div class="cta-buttons">
+                <button class="btn btn-primary btn-large" onclick="scrollToSection('services')">Cancel</button>
+    </section>
+
+
+</html>

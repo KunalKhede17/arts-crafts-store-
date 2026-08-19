@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Sliding Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#panel").slideToggle();
+            });
+        });
+    </script>
+
+    <style>
+        #panel{
+            width: 200px;
+            height: 100px;
+            background: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<button id="btn">Slide</button>
+<div id="panel"></div>
+
+</body>
+</html>

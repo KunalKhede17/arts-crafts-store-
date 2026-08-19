@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Fade Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#box").fadeToggle();
+            });
+        });
+    </script>
+
+    <style>
+        #box{
+            width: 150px;
+            height: 80px;
+            background: blue;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<button id="btn">Fade</button>
+<div id="box"></div>
+
+</body>
+</html>

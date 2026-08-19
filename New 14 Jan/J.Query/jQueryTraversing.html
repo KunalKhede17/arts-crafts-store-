@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Traversing</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        ul, li {
+            margin: 5px;
+            padding: 5px;
+        }
+        li {
+            background-color: lightgreen;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="list">
+    <li>Item 1
+        <ul>
+            <li>Subitem 1a</li>
+            <li>Subitem 1b</li>
+        </ul>
+    </li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+<button id="btn">Traverse</button>
+
+<script>
+$(document).ready(function(){
+    $("#btn").click(function(){
+
+        // Highlight the parent of Subitem 1a
+        $("#list li li:first").parent().parent().addClass("highlight");
+
+        // Highlight children of first li
+        $("#list li:first").children("ul").children("li").css("color", "red");
+
+        // Highlight next sibling of Item 1
+        $("#list li:first").next().css("font-weight", "bold");
+
+        // Highlight all siblings of Item 2
+        $("#list li:nth-child(2)").siblings().css("text-decoration", "underline");
+
+        // Highlight all ancestors of Subitem 1b
+        $("#list li li:last").parents().css("border", "1px dashed blue");
+    });
+});
+</script>
+
+</body>
+</html>

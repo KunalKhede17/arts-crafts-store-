@@ -1,0 +1,24 @@
+<script>
+function validateName() {
+  var name = document.getElementById("name").value;
+
+  if (name == "") {
+    alert("Name cannot be empty");
+    return false;
+  }
+  if (!isNaN(name)) {
+    alert("Numbers are not allowed");
+    return false;
+  }
+  alert("Valid Name");
+  return true;
+}
+</script>
+
+
+<form onsubmit="return validateName()">
+  Name:
+  <input type="text" id="name">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>

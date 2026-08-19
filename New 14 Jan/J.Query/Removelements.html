@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Remove Example</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<p id="para">This paragraph will be removed</p>
+<button id="removeBtn">Remove Paragraph</button>
+
+<script>
+$(document).ready(function(){
+    $("#removeBtn").click(function(){
+        $("#para").remove();
+    });
+});
+</script>
+
+</body>
+</html>

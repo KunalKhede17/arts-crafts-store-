@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Dimensions</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 10px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box">Hello jQuery</div>
+<button id="btn">Show Dimensions</button>
+
+<p id="output"></p>
+
+<script>
+$(document).ready(function(){
+    $("#btn").click(function(){
+        $("#output").html(
+            "Width: " + $("#box").width() + "px<br>" +
+            "Height: " + $("#box").height() + "px<br>" +
+            "Inner Width: " + $("#box").innerWidth() + "px<br>" +
+            "Inner Height: " + $("#box").innerHeight() + "px<br>" +
+            "Outer Width: " + $("#box").outerWidth() + "px<br>" +
+            "Outer Height: " + $("#box").outerHeight() + "px"
+        );
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Get Started</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("p").hide();
+        });
+    });
+    </script>
+</head>
+
+<body>
+
+    <h2>jQuery Get Started Example</h2>
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+
+    <button id="btn">Hide Paragraphs</button>
+
+</body>
+</html>

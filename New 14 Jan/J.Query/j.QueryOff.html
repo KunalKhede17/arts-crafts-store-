@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Local Example</title>
+    <!-- Local jQuery file -->
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+
+<p id="text">Hello World</p>
+<button id="btn">Change Text</button>
+
+<script>
+$(document).ready(function () {
+    $("#btn").click(function () {
+        $("#text").text("jQuery using Local file");
+    });
+});
+</script>
+
+</body>
+</html>

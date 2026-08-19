@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Animation Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#box").animate({
+                    left: "200px",
+                    height: "100px",
+                    width: "100px"
+                });
+            });
+        });
+    </script>
+
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<button id="btn">Animate</button>
+<br><br>
+<div id="box"></div>
+
+</body>
+</html>

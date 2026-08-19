@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Add Elements</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>jQuery Add Elements Example</h2>
+
+    <p id="para">This is a paragraph.</p>
+
+    <ul id="list">
+        <li>Item 1</li>
+    </ul>
+
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <button id="btn3">After</button>
+    <button id="btn4">Before</button>
+
+    <script>
+        $(document).ready(function(){
+
+            // Add content at the end
+            $("#btn1").click(function(){
+                $("#para").append(" <b>Appended Text</b>");
+            });
+
+            // Add content at the beginning
+            $("#btn2").click(function(){
+                $("#para").prepend("<b>Prepended Text</b> ");
+            });
+
+            // Add element after selected element
+            $("#btn3").click(function(){
+                $("#para").after("<p>This is added AFTER paragraph</p>");
+            });
+
+            // Add element before selected element
+            $("#btn4").click(function(){
+                $("#para").before("<p>This is added BEFORE paragraph</p>");
+            });
+
+        });
+    </script>
+
+</body>
+</html>

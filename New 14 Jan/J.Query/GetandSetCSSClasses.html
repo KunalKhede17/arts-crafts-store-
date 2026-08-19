@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery CSS Classes Example 2</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .box {
+            width: 200px;
+            height: 120px;
+            background-color: lightgray;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 120px;
+            transition: all 0.3s ease;
+        }
+
+        .active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .rounded {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>jQuery Class Control – Example 2</h2>
+
+    <div id="box" class="box">Click Buttons</div>
+
+    <button id="add">Add Class</button>
+    <button id="remove">Remove Class</button>
+    <button id="toggle">Toggle Class</button>
+    <button id="check">Check Class</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#add").click(function(){
+                $("#box").addClass("active rounded");
+            });
+
+            $("#remove").click(function(){
+                $("#box").removeClass("active rounded");
+            });
+
+            $("#toggle").click(function(){
+                $("#box").toggleClass("active");
+            });
+
+            $("#check").click(function(){
+                if ($("#box").hasClass("active")) {
+                    alert("Active class is applied");
+                } else {
+                    alert("Active class is NOT applied");
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html>

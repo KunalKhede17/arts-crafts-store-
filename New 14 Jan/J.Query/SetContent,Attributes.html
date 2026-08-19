@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Set Content and Attributes</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2 id="heading">Old Heading</h2>
+
+    <p id="para">Old paragraph text</p>
+
+    <input type="text" id="name">
+
+    <br><br>
+
+    <a id="link" href="#">Old Link</a>
+
+    <br><br>
+
+    <button id="btn">Set Content</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#btn").click(function(){
+
+                // Set text
+                $("#heading").text("Welcome to jQuery");
+
+                // Set HTML
+                $("#para").html("<b>This text is set using jQuery</b>");
+
+                // Set input value
+                $("#name").val("Kunal");
+
+                // Set attribute value
+                $("#link").attr("href", "https://www.google.com");
+                $("#link").text("Visit Google");
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>

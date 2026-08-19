@@ -1,0 +1,31 @@
+history
+=======
+1989
+=======
+variable 
+=======
+data type 
+======
+type()
+=======
+operator 
+=======
+types of operator 
+==================
+control statement
+=================
+if                  loop
+-->simple if        for    while
+-->if else 
+-->nested if 
+-->else if ladder
+
+Nested Loop
+=====================
+function 
+module
+List
+set 
+tuple 
+dictionary
+=========

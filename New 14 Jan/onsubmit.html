@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onsubmit Example</title>
+</head>
+<body>
+
+<h2>Form Example</h2>
+<form onsubmit="return validateForm()">
+    Name: <input type="text" id="name"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateForm() {
+    var name = document.getElementById("name").value;
+    if(name === "") {
+        alert("Name must be filled out!");
+        return false; // Prevent form submission
+    }
+    alert("Form submitted successfully!");
+    return true; // Allow form submission
+}
+</script>
+
+</body>
+</html>

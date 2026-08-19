@@ -1,0 +1,234 @@
+body{
+    background-color: ivory
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(13, 13, 15);
+    font-style: oblique;
+    
+}
+
+h2{
+    font-size: 20px;
+    color: rgb(23, 22, 22);
+}
+
+/* Global Styles */
+:root {
+    --primary-color: #070303;
+    --accent-color: #7C3AED; /* Purple for Login info */
+    --hover-color: #6D28D9;
+    --bg-light: #F9FAFB;
+    --border-color: #E5E7EB;
+    --text-muted: #6B7280;
+    --bg-accordion: #EFF6FF; /* Light blueish */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--primary-color);
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* border-bottom: 1px solid var(--border-color); */ /* Optional, not clearly visible in screenshot but good for sticky */
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+    outline: none;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 500;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--primary-color); 
+}
+
+.btn-login {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: var(--hover-color);
+}
+
+/* Hero Section */
+.hero {
+    padding: 60px 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif; /* "the" looks simple sans serif */
+    text-transform: lowercase;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-text {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.social-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.btn-outline {
+    border: 1px solid #000;
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+.btn-outline:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.by-text {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.welcome-message {
+    background-color: #e0f2fe;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid #0ea5e9;
+}
+
+.welcome-message p {
+    margin: 0;
+    color: #0891b2;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    /* Aspect ratio squareish in screenshot */
+    aspect-ratio: 0/0; 
+}
+

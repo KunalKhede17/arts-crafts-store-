@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery css() Method Example</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        #box {
+            width: 200px;
+            height: 120px;
+            background-color: lightgray;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 120px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>jQuery css() Method</h2>
+
+    <div id="box">Box</div>
+
+    <button id="set">Set CSS</button>
+    <button id="get">Get CSS</button>
+
+    <script>
+        $(document).ready(function(){
+
+            // Set CSS
+            $("#set").click(function(){
+                $("#box").css({
+                    "background-color": "orange",
+                    "color": "white",
+                    "font-size": "22px",
+                    "border-radius": "15px"
+                });
+            });
+
+            // Get CSS
+            $("#get").click(function(){
+                var bgColor = $("#box").css("background-color");
+                alert("Background Color is: " + bgColor);
+            });
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(236, 233, 230);
+
+}
+
+
+h2{
+    text-align: center;
+    color: rgb(246, 9, 9);
+    font-size: 10px;
+    line-height: 0;
+}
+
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    line-height: 5pc;
+}
+
+h4{
+    text-align: center;
+    color: #ed0808;
+    font-size: 10px;
+    line-height: 9px;
+}

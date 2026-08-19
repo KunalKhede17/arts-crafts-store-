@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>onkeydown Example</title>
+</head>
+<body>
+
+<h2>Type something in the box:</h2>
+<input type="text" onkeydown="keyPressed(event)">
+
+<script>
+function keyPressed(event) {
+    alert("You pressed: " + event.key);
+}
+</script>
+
+</body>
+</html>

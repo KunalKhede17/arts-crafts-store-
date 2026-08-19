@@ -1,0 +1,30 @@
+body{
+        background-image: url(https://play-lh.googleusercontent.com/wmUTRbIwCGY9HfWot25iekSAfPv4nJH_P2wZOCpzUeLQenq-__V8vPtuYJvnkTLCjSo=w240-h480-rw);
+    background-repeat: no-repeat;
+    background-size: 140px;
+
+    
+}
+
+table,tr,th{
+    text-align: center;
+    font-size: 40px;
+ 
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+h2{
+text-align: center;
+    
+    
+}
+
+h3{
+    text-align: end;
+}
+

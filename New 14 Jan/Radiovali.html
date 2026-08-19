@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+function validateGender() {
+    var gender = document.getElementsByName("gender");
+    var selected = false;
+
+    for (var i = 0; i < gender.length; i++) {
+        if (gender[i].checked) {
+            selected = true;
+            break;
+        }
+    }
+
+    if (!selected) {
+        alert("Please select Man or Woman");
+        return false;
+    }
+
+    alert("Valid Selection");
+    return true;
+}
+</script>
+
+<form onsubmit="return validateGender()">
+    Man/Woman:
+    <br>
+    <input type="radio" name="gender" value="Man"> Man
+    <br>
+    <input type="radio" name="gender" value="Woman"> Woman
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

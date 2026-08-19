@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Website To  | Handmade Arts & Crafts</title>
+    <meta
+      name="description"
+      content="Rustic Loom is a boutique arts and crafts store offering handmade home decor, pottery, candles, textiles, and creative kits."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand">
+          <span class="brand-mark"><img src="Imagelogo.jpg" alt="Logo"></span>
+          <span>_cozy.crafts__</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#shop">Shop</a>
+          <a href="#collections">Collections</a>
+          <a href="#about">About</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        
+<div class="cart-icon" onclick="toggleCart()">
+    <img src="add_to_cart.png" alt="Shopping Cart" class="cart-image" />
+    <span class="cart-count">0</span>
+</div>
+
+
+<button class="menu-toggle" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Handmade with heart</p>
+            <h1>You Imagine We Craft It </h1>
+            <p class="lead">
+              Handmade Chrochet,Embroidery,Bouquet,Hampers Gifting
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="#shop">Shop bestsellers</a>
+              <a class="secondary-button" href="#about">Our story</a>
+            </div>
+            
+          
+          </div>
+          <div class="hero-visual" aria-label="Featured craft goods">
+            <div class="product-card feature-card">
+              <img
+                src="HomePage.jpeg"
+                alt="Handmade ceramic vase"
+              />
+              <div class="feature-info">
+                <span>Featured piece</span>
+                <h3> Ganpati Bappa Morya, Mangal Murti Morya</h3>
+                
+              </div>
+            </div>
+       
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="collections">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Curated collections</p>
+            <h2> My Featured Collections </h2>
+          </div>
+
+          <div class="collection-grid">
+            <article class="collection-item">
+              <img
+                src="Numbers 02.jpeg"
+                alt="Pottery" 
+              />
+              <div>
+                <h3>Bunny Floral </h3>
+                <p>Price: 1499$ </p>
+              </div>
+            </article>
+            <article class="collection-item">
+              <img
+                src="number 01.jpeg"
+                alt="Textiles"
+              />
+              <div>
+                <h3> Sun Rise Flower </h3>
+                <p>Price: 199$ </p>
+              </div>
+            </article>
+            <article class="collection-item">
+              <img
+                src="Numbers 03.jpeg"
+                alt="DIY kits"
+              />
+              <div>
+                <h3> Bookey Flower </h3>
+                <p>Price: 399$ </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="shop">
+        <div class="container">
+          <div class="section-heading row-heading">
+            <div>
+              <p class="eyebrow">Best sellers</p>
+              <h2>Accessories</h2>
+            </div>
+            <a href="#contact" class="text-link">Custom order</a>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card">
+              <img
+                src="Numbers 04.jpeg"
+                alt="Handmade ceramic mug"
+              />
+              <div class="product-info">
+                <div class="product-meta">
+              
+               
+                </div>
+                <h3>Bookey Flower</h3>
+                <div class="product-row">
+                  <p>599$</p>
+                  <button class="add-cart" data-name="Stoneware Mug Set" data-price="34">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img
+                src="Numbers 05.jpeg"
+                alt="Handmade candle"
+              />
+              <div class="product-info">
+                <div class="product-meta">
+                
+                 
+                </div>
+                <h3>keychain </h3>
+                <div class="product-row">
+                  <p>89$</p>
+                  <button class="add-cart" data-name="Botanical Candle" data-price="28">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img
+                src="Numbers 06.jpeg"
+                alt="Crochet pillow"
+              />
+              <div class="product-info">
+                <div class="product-meta">
+                  
+                </div>
+                <h3>Bookey Flower</h3>
+                <div class="product-row">
+                  <p>699$</p>
+                  <button class="add-cart" data-name="Crochet Accent Pillow" data-price="42">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img
+                src="Numberlogo.jpeg"
+                alt="Painted art kit"
+              />
+              <div class="product-info">
+                <div class="product-meta">
+                
+                </div>
+                <h3>Flower Keychain</h3>
+                <div class="product-row">
+                  <p>149$</p>
+                  <button class="add-cart" data-name="Watercolor Starter Kit" data-price="36">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="story">
+        <div class="container story-grid">
+          <div class="story-image-wrap">
+            <video
+              src="Video Logo.mp4"
+              alt="Artisan crafting"
+              autoplay
+              muted
+              loop  
+            />
+          </div>
+          <div class="story-copy">
+            <p class="eyebrow">Crafted with Purpose</p>
+            <h2>Made by makers who celebrate creativity and craftsmanship..</h2>
+            <p>
+              Our Arts & Crafts Store brings together unique handmade creations from talented artisans. Every piece is thoughtfully crafted with creativity, passion, and attention to detail, bringing artistic charm and personality into your home.
+            </p>
+            <p>
+              From handmade décor and beautiful paintings to creative crafts and unique gifts, each item is carefully selected to inspire creativity, celebrate craftsmanship, and add something special to everyday spaces.
+            </p>
+            <ul class="feature-list">
+              <li>Unique handmade arts & crafts</li>
+              <li>Creative artisan-made products</li>
+              <li>Perfect for gifts & home décor</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="reviews">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Customer love</p>
+            <h2>What Our Arts & Crafts Community Says</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <blockquote>
+             “The craftsmanship is amazing, and every piece feels unique and personal. My home feels more creative and beautiful.”
+              <footer>— Maya R.</footer>
+            </blockquote>
+            <blockquote>
+             “I ordered a handmade décor set as a gift, and it arrived beautifully packaged. The quality and attention to detail were wonderful.”
+              <footer>— Elena T.</footer>
+            </blockquote>
+            <blockquote>
+              “A truly special store for anyone who loves creative, handmade arts and crafts with character and charm.”
+              <footer>— Chloe S.</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container newsletter-box">
+          <div>
+            <p class="eyebrow">Arts & Crafts Store</p>
+            <h2>Join us for first access to new handmade collections, creative finds, and exclusive Arts & Crafts drops..</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" aria-label="Email address" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#top" class="brand">
+            <span>_cozy.crafts__</span>
+          </a>
+          <p>Thoughtful handmade pieces for beautiful living.</p>
+        </div>
+
+        <div>
+          <h3>Visit</h3>
+          <ul>
+            <li> Tejaji Nagar, Indore, Madhya Pradesh 452020</li>
+           <li>+91 9165594465</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Hours</h3>
+          <ul>
+            <li>Monday - Saturday: 10am - 8pm</li>
+            <li>Sunday: closed </li>
+     </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> _cozy.crafts__ | Website To Handmade Arts & Crafts.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

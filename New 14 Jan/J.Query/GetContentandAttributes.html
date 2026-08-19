@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Get Content and Attributes</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2 id="heading">Welcome to <b>jQuery</b></h2>
+
+    <p id="para">This is <b>paragraph</b> text.</p>
+
+    <input type="text" id="name" value="Kunal">
+
+    <br><br>
+
+    <a id="link" href="https://www.google.com">Visit Google</a>
+
+    <br><br>
+
+    <button id="btn">Get Content</button>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#btn").click(function(){
+
+                // Get text
+                var textValue = $("#heading").text();
+
+                // Get HTML
+                var htmlValue = $("#para").html();
+
+                // Get input value
+                var inputValue = $("#name").val();
+
+                // Get attribute value
+                var linkValue = $("#link").attr("href");
+
+                alert(
+                    "Text: " + textValue + "\n\n" +
+                    "HTML: " + htmlValue + "\n\n" +
+                    "Input Value: " + inputValue + "\n\n" +
+                    "Link Attribute: " + linkValue
+                );
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>

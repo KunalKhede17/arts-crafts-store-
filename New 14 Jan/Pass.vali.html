@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+function validateName() {
+    var name = document.getElementById("name").value;
+
+    if (name == "") {
+        alert("Password cannot be empty");
+        return false;
+    }
+
+    if (!isNaN(name)) {
+        alert("Numbers are not allowed");
+        return false;
+    }
+
+    alert("Valid Password");
+    return true;
+}
+</script>
+
+<form onsubmit="return validateName()">
+    Password:
+    <input type="text" id="name">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

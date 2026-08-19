@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onchange Example</title>
+</head>
+<body>
+
+<h2>Enter your name:</h2>
+<input type="text" id="name" onchange="showValue()">
+
+<script>
+function showValue() {
+    var input = document.getElementById("name").value;
+    alert("You entered: " + input);
+}
+</script>
+
+</body>
+</html>
