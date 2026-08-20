@@ -1,3 +1,7 @@
+/* Bootstrap 5.3.3 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
+
+/* Custom theme overrides */
 :root {
   --bg: #f8f3ed;
   --panel: #fffdf9;
@@ -12,65 +16,47 @@
 
 
 .cart-icon {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    z-index: 9999;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  z-index: 1080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 6px 18px rgba(49, 41, 35, 0.14);
 }
 
 .cart-image {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .cart-count {
-    position: absolute;
-    top: -6px;
-    right: -7px;
-    background: red;
-    color: white;
-    font-size: 10px;
-    min-width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 50%;
+  background: #dc3545;
+  color: #fff;
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * {
   box-sizing: border-box;
@@ -113,8 +99,7 @@ input {
   top: 0;
   z-index: 10;
   background: rgba(248, 243, 237, 0.88);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--line);
+ border-bottom: 1px solid var(--line);
 }
 
 .nav-wrap {
@@ -708,5 +693,173 @@ blockquote footer {
   .newsletter-form button,
   .newsletter-form input {
     width: 100%;
+  }
+}
+
+
+/* =========================================================
+   Bootstrap-friendly responsive overrides
+   ========================================================= */
+
+.container {
+  --bs-gutter-x: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  font-weight: 600;
+}
+
+.primary-button,
+.secondary-button,
+.add-cart,
+.newsletter-form button {
+  border-width: 1px;
+}
+
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.add-cart:focus-visible,
+.icon-button:focus-visible,
+.cart-button:focus-visible,
+.menu-toggle:focus-visible {
+  outline: 3px solid rgba(167, 92, 62, 0.25);
+  outline-offset: 2px;
+}
+
+.product-card,
+.collection-item,
+.feature-card,
+blockquote {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover,
+.collection-item:hover,
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(50, 38, 33, 0.10);
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    width: min(960px, calc(100% - 2rem));
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .hero-grid {
+    gap: 2rem;
+  }
+
+  .feature-card img {
+    height: 460px;
+  }
+
+  .story-image-wrap img {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    width: min(100% - 1.5rem, 720px);
+  }
+
+  .nav-wrap {
+    min-height: 68px;
+  }
+
+  .main-nav {
+    top: 68px;
+  }
+
+  .hero {
+    padding: 2.5rem 0 2rem;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 13vw, 4rem);
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    gap: 0.7rem;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+  }
+
+  .feature-card img {
+    height: 360px;
+  }
+
+  .collection-item img,
+  .product-card img {
+    height: 230px;
+  }
+
+  .story-image-wrap img {
+    min-height: 360px;
+  }
+
+  .newsletter {
+    padding-top: 2.5rem;
+  }
+
+  .newsletter-box {
+    padding: 1.5rem;
+  }
+
+  .cart-icon {
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .cart-image {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .stats {
+    gap: 1rem;
+  }
+
+  .stats li {
+    flex: 1 1 40%;
+  }
+
+  .section-heading h2 {
+    font-size: 2.4rem;
+  }
+
+  .feature-card {
+    border-radius: 20px;
+  }
+
+  .feature-card img {
+    height: 300px;
+  }
+
+  .story-image-wrap img {
+    min-height: 300px;
+  }
+
+  .newsletter-box {
+    border-radius: 20px;
   }
 }
